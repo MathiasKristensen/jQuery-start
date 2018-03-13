@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>jQuery første forsøg</title>
+</head>
+<body>
+    <h1>jQuery</h1>
+    
+    <article>
+        <h2>EN TEKST</h2>
+        <p id="p1">Vir prudens non contra ventum minquit.</p>
+        <p>Iacta est alea.</p>
+    </article>
+    
+    <!-- her loades jQ -->
+    <script src="js/jquery-3.3.1.min.js"></script>
+    
+    <!-- her er min kode -->
+    <script>
+    /**
+     * Min kode her ...
+     **/
+    $(document).ready(function(){
+        
+        // eventhandler ...
+        $("p").click(function(){
+            $(this).hide();
+        });
+        
+        var skrift = "sans-serif";
+            
+        $('#p1').css({
+            'color' : '#3322ff',
+            'font-size' : '8em',
+            'font-family' : skrift
+        })
+        
+    });
+    </script>
+    
+</body>
+</html>
